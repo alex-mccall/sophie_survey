@@ -4,7 +4,7 @@ library(viridis)
 library(stringr)
 
 
-x_survey <- read_csv("Spring Survey.csv")
+x_survey <- read_csv("data/Spring Survey.csv")
 headings <- names(x_survey)
 names(x_survey) <- make.names(names(x_survey), unique=TRUE)
 all_teams <- c("all",unique(x_survey$I.consider.myself.....))
